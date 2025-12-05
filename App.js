@@ -1,20 +1,42 @@
+import React, { useState } from 'react';
+import { StyleSheet, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+// Screens
+import SongListScreen from './src/screens/SongListScreen';
+import PlayerScreen from './src/screens/PlayerScreen';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    const [selectedSong, setSelectedSong] = useState(null);
+
+    const handleSelectSong = (song) => {
+        setSelectedSong(song);
+    };
+
+    const handleBack = () => {
+        setSelectedSong(null);
+    };
+
+    return (
+        <View style={styles.container}>
+            <StatusBar style="light" />
+            {selectedSong ? (
+                <PlayerScreen
+                    songData={selectedSong}
+                    onBack={handleBack}
+                />
+            ) : (
+                <SongListScreen
+                    onSelect={handleSelectSong}
+                />
+            )}
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#121212',
+    },
 });

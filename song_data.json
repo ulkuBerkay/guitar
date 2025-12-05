@@ -1,0 +1,43 @@
+{
+    "songTitle": "Metallica - Enter Sandman (Intro)",
+    "bpm": 123,
+    "tabLines": [
+        "e|---------------------------------|---------------------------------|",
+        "B|---------------------------------|---------------------------------|",
+        "G|---------------------------------|---------------------------------|",
+        "D|-------5-------------------------|-------5-------------------------|",
+        "A|----7-----------7----------------|----7-----------7----------------|",
+        "E|-0-------6--5-------0--0-0-0-0-0-|-0-------6--5-------0--0-0-0-0-0-|",
+        "                                     PM.............."
+    ],
+    "events": [
+        {
+            "time": 0.5,
+            "note": "Open E",
+            "technique": "let_ring",
+            "video_url": "https://www.youtube.com/shorts/NIthJ95fEAI",
+            "duration": 2000
+        },
+        {
+            "time": 2.2,
+            "note": "A string 7 (Slide)",
+            "technique": "slide",
+            "video_url": "https://www.youtube.com/shorts/NIthJ95fEAI",
+            "duration": 3000
+        },
+        {
+            "time": 7.0,
+            "note": "E string 0 (Palm Mute)",
+            "technique": "palm_mute",
+            "video_url": "https://www.youtube.com/shorts/NIthJ95fEAI",
+            "duration": 5000
+        },
+        {
+            "time": 10.5,
+            "note": "Blue Note (Bb)",
+            "technique": "vibrato",
+            "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+            "duration": 4000
+        }
+    ]
+}
